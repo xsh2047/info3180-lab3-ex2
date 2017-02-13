@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block main %}
+    <div class="row">
+        <div class="col-lg-6">
+            <h1>Contact Form</h1>
+            <hr/>
+            <p> 
+                <small>
+                    Fill in this form to contact the site owners.    
+                </small>
+            </p>
+            <form method=post>
+              <div class="form-group">
+                <label for="name">Name<span class="required">(Required)</span></label>
+                <span class="desc">Please enter your full name</span>
+                <input type="text" class="form-control" id="name" name="name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email<span class="required">(Required)</span></label>
+                <span class="desc">Please enter your email address</span>
+                <input type="email" class="form-control" id="email" name="email">
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject<span class="required">(Required)</span></label>
+                <span class="desc">Please enter the subject for your message</span>
+                <input type="text" class="form-control" id="subject" name="subject">
+              </div>
+              <div class="form-group">
+                <label for="message">Message<span class="required">(Required)</span></label>
+                <span class="desc">Please enter the message you would like to send.</span>
+                <textarea class="form-control" rows="5" id="message" name="message"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send</button>
+            </form>  
+        </div>
+    </div>
+{% endblock %}

@@ -1,3 +1,13 @@
 body {
     padding-top: 50px;
 }
+
+.required{
+    color: red;
+}
+
+.desc{
+    color: darkgrey;
+    display: block;
+}
+
